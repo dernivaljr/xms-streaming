@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro | XMS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-wrapper">
+      <a href="index.html" class="auth-logo">
+        <span class="logo-x">X</span>MS
+      </a>
+
+      <div class="auth-card">
+        <div class="auth-header">
+          <span class="auth-tag">Novo assinante</span>
+          <h1>Criar sua conta</h1>
+          <p>Cadastre-se para acessar a área exclusiva da plataforma XMS.</p>
+        </div>
+
+        <form class="auth-form" id="registerForm">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" name="password" placeholder="Crie uma senha" required />
+              <button type="button" class="password-toggle" data-toggle-password="password">Mostrar</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirmar senha</label>
+            <div class="password-wrapper">
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Digite novamente a senha" required />
+              <button type="button" class="password-toggle" data-toggle-password="confirmPassword">Mostrar</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="plan">Plano</label>
+            <select id="plan" name="plan" required>
+              <option value="">Selecione um plano</option>
+              <option value="Basic">Basic</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </div>
+
+          <p class="form-message" id="registerMessage"></p>
+
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+          <button type="button" class="btn btn-outline-danger" id="clearUsersButton">Limpar usuários salvos</button>
+        </form>
+
+        <div class="auth-footer">
+          <p>Já possui conta?</p>
+          <a href="login.html">Fazer login</a>
+        </div>
+
+        <div class="back-link">
+          <a href="index.html">← Voltar para a página inicial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

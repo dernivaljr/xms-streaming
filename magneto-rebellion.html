@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magneto: Rebelião | XMS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/details.css" />
+
+  <style>
+    .hero-details.magneto-hero {
+      background:
+        linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+        linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+        url("assets/images/card-6.jpg") center 30% /cover no-repeat;
+    }
+    .premium-lock { padding: 5rem 0; }
+    .premium-lock-card {
+      max-width: 860px; margin: 0 auto; background: rgba(255,255,255,.03);
+      border: 1px solid rgba(245,197,24,.2); border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35); padding: 2rem; text-align: center;
+    }
+    .premium-lock-card h2 { font-family: "Orbitron", sans-serif; margin-bottom: 1rem; }
+    .premium-lock-card p { color: #9ca3af; line-height: 1.8; margin-bottom: 1.5rem; }
+    .premium-lock-actions { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .premium-hidden { display:none; }
+  </style>
+</head>
+<body data-premium-page="true">
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo"><span class="logo-x">X</span>MS</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#details">Detalhes</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#related">Relacionados</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline">Voltar</a>
+        <a href="subscriber.html" class="btn btn-primary">Área do Assinante</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-details magneto-hero">
+      <div class="container hero-details-content">
+        <span class="hero-badge" style="background: rgba(245,197,24,.18); color:#f5c518;">Conteúdo Exclusivo</span>
+        <h1>Magneto: Rebelião</h1>
+        <div class="hero-meta">
+          <span class="meta-pill">2026</span>
+          <span class="meta-pill">1h 56min</span>
+          <span class="meta-pill">16 anos</span>
+          <span class="meta-pill">Ação / Drama</span>
+          <span class="meta-pill">⭐ 4.8 / 5</span>
+        </div>
+        <p class="hero-description">
+          Um líder mutante decide enfrentar governos e corporações para proteger sua espécie, mesmo que para isso precise mergulhar o mundo em um conflito sem retorno.
+        </p>
+        <div class="hero-buttons">
+          <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
+          <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="premium-lock premium-hidden" id="premiumLock">
+      <div class="container">
+        <div class="premium-lock-card">
+          <h2>Conteúdo disponível apenas para assinantes</h2>
+          <p>Faça login para acessar os detalhes completos e o trailer exclusivo deste título.</p>
+          <div class="premium-lock-actions">
+            <a href="login.html" class="btn btn-primary">Fazer Login</a>
+            <a href="register.html" class="btn btn-secondary">Criar Conta</a>
+            <a href="index.html" class="btn btn-outline">Voltar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section premium-content" id="details">
+      <div class="container details-grid">
+        <div class="content-stack">
+          <article class="details-card">
+            <h2 class="section-title">Sinopse</h2>
+            <p class="synopsis-text">
+              Após anos observando perseguições e experimentos contra mutantes, Magnus decide abandonar qualquer tentativa de coexistência pacífica. Com uma facção poderosa ao seu lado, ele inicia uma campanha para tomar centros de controle militar e expor arquivos secretos ao mundo.
+            </p>
+            <br />
+            <p class="synopsis-text">
+              Mas conforme sua revolta cresce, aliados e inimigos passam a questionar se ele ainda luta por liberdade ou se está prestes a se tornar exatamente o que jurou destruir.
+            </p>
+          </article>
+
+          <article class="details-card">
+            <h2 class="section-title">Elenco Principal</h2>
+            <ul class="cast-list">
+              <li><strong>Adrian Wolfe</strong> como Magnus</li>
+              <li><strong>Elisa Hart</strong> como Raven Cole</li>
+              <li><strong>Daniel Voss</strong> como Elias Kent</li>
+              <li><strong>Victor Crane</strong> como Senator Hale</li>
+            </ul>
+          </article>
+
+          <article class="details-card video-wrapper" id="trailer">
+            <h2 class="section-title">Trailer</h2>
+            <video class="video-player" controls poster="assets/images/card-6.jpg">
+              <source src="assets/videos/magneto-rebellion.mp4" type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeo.
+            </video>
+          </article>
+        </div>
+
+        <aside class="content-stack">
+          <article class="sidebar-card">
+            <h2 class="section-title">Informações</h2>
+            <ul class="info-list">
+              <li><strong>Título:</strong> Magneto: Rebelião</li>
+              <li><strong>Tipo:</strong> Filme</li>
+              <li><strong>Duração:</strong> 1h 56min</li>
+              <li><strong>Classificação:</strong> 16 anos</li>
+              <li><strong>Categoria:</strong> Ação, Drama</li>
+              <li><strong>Status:</strong> Exclusivo</li>
+              <li><strong>Direção:</strong> Marcus Hall</li>
+            </ul>
+          </article>
+
+          <article class="sidebar-card">
+            <h2 class="section-title">Avaliação</h2>
+            <ul class="info-list">
+              <li><strong>Público:</strong> 4.8 / 5</li>
+              <li><strong>Crítica:</strong> 93%</li>
+              <li><strong>Destaque:</strong> Conflito ideológico mutante</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="related-section premium-content" id="related">
+      <div class="container">
+        <h2 class="section-title">Títulos Relacionados</h2>
+        <div class="related-grid">
+          <a href="wolverine-classified.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-5.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>Wolverine: Classificado</h3><p>Exclusivo • Premium</p></div>
+          </a>
+          <a href="phoenix-protocol.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-7.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>Protocolo Fênix</h3><p>Exclusivo • Premium</p></div>
+          </a>
+          <a href="first-mutation.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-1.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>X-Men: Primeira Mutação</h3><p>Ação • Ficção Científica</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/premium-access.js"></script>
+</body>
+</html>

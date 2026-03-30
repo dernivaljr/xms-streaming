@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origens Mutantes | XMS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/details.css" />
+
+  <style>
+    .hero-details.origins-hero {
+      background:
+        linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+        linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+        url("assets/images/card-4.jpg") center/cover no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo"><span class="logo-x">X</span>MS</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#details">Detalhes</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#related">Relacionados</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline">Voltar</a>
+        <a href="register.html" class="btn btn-primary">Assinar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-details origins-hero">
+      <div class="container hero-details-content">
+        <span class="hero-badge">Conteúdo Gratuito</span>
+        <h1>Origens Mutantes</h1>
+
+        <div class="hero-meta">
+          <span class="meta-pill">2026</span>
+          <span class="meta-pill">1h 38min</span>
+          <span class="meta-pill">Livre</span>
+          <span class="meta-pill">Documentário / Ficção</span>
+          <span class="meta-pill">⭐ 4.5 / 5</span>
+        </div>
+
+        <p class="hero-description">
+          Uma investigação cinematográfica sobre o surgimento dos mutantes, suas primeiras manifestações e o impacto dessa nova espécie na sociedade.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
+          <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section" id="details">
+      <div class="container details-grid">
+        <div class="content-stack">
+          <article class="details-card">
+            <h2 class="section-title">Sinopse</h2>
+            <p class="synopsis-text">
+              Misturando entrevistas, arquivos secretos e reconstruções visuais, Origens Mutantes apresenta uma linha do tempo fictícia sobre os primeiros sinais da mutação genética no planeta.
+            </p>
+            <br />
+            <p class="synopsis-text">
+              O longa explora teorias, laboratórios ocultos, relatos históricos e o momento em que o mundo percebeu que a evolução havia tomado um novo rumo.
+            </p>
+          </article>
+
+          <article class="details-card">
+            <h2 class="section-title">Participações</h2>
+            <ul class="cast-list">
+              <li><strong>Dr. Alan Pierce</strong> - Geneticista</li>
+              <li><strong>Helen Brooks</strong> - Historiadora</li>
+              <li><strong>Marcus Voss</strong> - Analista de segurança</li>
+              <li><strong>Lena Frost</strong> - Pesquisadora mutante</li>
+            </ul>
+          </article>
+
+          <article class="details-card video-wrapper" id="trailer">
+            <h2 class="section-title">Trailer</h2>
+            <video class="video-player" controls poster="assets/images/card-4.jpg">
+              <source src="assets/videos/mutant-origins.mp4" type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeo.
+            </video>
+          </article>
+        </div>
+
+        <aside class="content-stack">
+          <article class="sidebar-card">
+            <h2 class="section-title">Informações</h2>
+            <ul class="info-list">
+              <li><strong>Título:</strong> Origens Mutantes</li>
+              <li><strong>Tipo:</strong> Documentário</li>
+              <li><strong>Ano:</strong> 2026</li>
+              <li><strong>Duração:</strong> 1h 38min</li>
+              <li><strong>Classificação:</strong> Livre</li>
+              <li><strong>Categoria:</strong> Documentário, Ficção</li>
+              <li><strong>Status:</strong> Disponível</li>
+              <li><strong>Produção:</strong> XMS Archives</li>
+            </ul>
+          </article>
+
+          <article class="sidebar-card">
+            <h2 class="section-title">Avaliação</h2>
+            <ul class="info-list">
+              <li><strong>Público:</strong> 4.5 / 5</li>
+              <li><strong>Crítica:</strong> 84%</li>
+              <li><strong>Destaque:</strong> Linha do tempo mutante</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="related-section" id="related">
+      <div class="container">
+        <h2 class="section-title">Títulos Relacionados</h2>
+        <div class="related-grid">
+          <a href="first-mutation.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-1.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>X-Men: Primeira Mutação</h3><p>Ação • Ficção Científica</p></div>
+          </a>
+          <a href="school-of-power.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-3.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>Escola de Poder</h3><p>Série • Drama</p></div>
+          </a>
+          <a href="cerebro-secret-files.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-8.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-body"><h3>Cérebro: Arquivos Secretos</h3><p>Exclusivo • Premium</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

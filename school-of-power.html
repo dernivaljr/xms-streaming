@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola de Poder | XMS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/details.css" />
+
+  <style>
+    .hero-details.school-hero {
+      background:
+        linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+        linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+        url("assets/images/card-3.jpg") center 30% /cover no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo"><span class="logo-x">X</span>MS</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#details">Detalhes</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#related">Relacionados</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline">Voltar</a>
+        <a href="register.html" class="btn btn-primary">Assinar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-details school-hero">
+      <div class="container hero-details-content">
+        <span class="hero-badge">Conteúdo Gratuito</span>
+        <h1>Escola de Poder</h1>
+
+        <div class="hero-meta">
+          <span class="meta-pill">2026</span>
+          <span class="meta-pill">1 Temporada</span>
+          <span class="meta-pill">8 Episódios</span>
+          <span class="meta-pill">14 anos</span>
+          <span class="meta-pill">Drama / Sci-Fi</span>
+        </div>
+
+        <p class="hero-description">
+          Em uma academia secreta para jovens mutantes, dons extraordinários e conflitos pessoais se misturam em uma jornada de treinamento, amizade e descoberta.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
+          <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section" id="details">
+      <div class="container details-grid">
+        <div class="content-stack">
+          <article class="details-card">
+            <h2 class="section-title">Sinopse</h2>
+            <p class="synopsis-text">
+              A Academia Helix recebe adolescentes de diferentes partes do mundo, todos marcados por habilidades mutantes que ainda não conseguem controlar. Em um ambiente repleto de segredos, rivalidades e desafios, cada aluno precisa aprender a lidar com o próprio poder.
+            </p>
+            <br />
+            <p class="synopsis-text">
+              Enquanto treinam para se proteger de ameaças externas, os estudantes descobrem que o maior perigo pode estar escondido dentro dos próprios muros da escola.
+            </p>
+          </article>
+
+          <article class="details-card">
+            <h2 class="section-title">Elenco Principal</h2>
+            <ul class="cast-list">
+              <li><strong>Leo Carter</strong> como Ethan Ward</li>
+              <li><strong>Maya Rivers</strong> como Luna Frost</li>
+              <li><strong>Clara Bloom</strong> como Iris Vale</li>
+              <li><strong>Noah Drake</strong> como Axel Stone</li>
+              <li><strong>Victor Lane</strong> como Diretor Orion</li>
+            </ul>
+          </article>
+
+          <article class="details-card video-wrapper" id="trailer">
+            <h2 class="section-title">Trailer</h2>
+            <video class="video-player" controls poster="assets/images/card-3.jpg">
+              <source src="assets/videos/school-of-power.mp4" type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeo.
+            </video>
+          </article>
+        </div>
+
+        <aside class="content-stack">
+          <article class="sidebar-card">
+            <h2 class="section-title">Informações</h2>
+            <ul class="info-list">
+              <li><strong>Título:</strong> Escola de Poder</li>
+              <li><strong>Tipo:</strong> Série</li>
+              <li><strong>Temporadas:</strong> 1</li>
+              <li><strong>Episódios:</strong> 8</li>
+              <li><strong>Classificação:</strong> 14 anos</li>
+              <li><strong>Categoria:</strong> Drama, Ficção Científica</li>
+              <li><strong>Status:</strong> Disponível</li>
+              <li><strong>Criador:</strong> Evan Cross</li>
+            </ul>
+          </article>
+
+          <article class="sidebar-card">
+            <h2 class="section-title">Avaliação</h2>
+            <ul class="info-list">
+              <li><strong>Público:</strong> 4.6 / 5</li>
+              <li><strong>Crítica:</strong> 88%</li>
+              <li><strong>Destaque:</strong> Formação de jovens mutantes</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="related-section" id="related">
+      <div class="container">
+        <h2 class="section-title">Títulos Relacionados</h2>
+        <div class="related-grid">
+          <a href="first-mutation.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-1.jpg') center 30%/cover no-repeat;"></div>
+            <div class="related-body"><h3>X-Men: Primeira Mutação</h3><p>Ação • Ficção Científica</p></div>
+          </a>
+          <a href="mutant-origins.html" class="related-card">
+            <div class="related-image related-image-4"></div>
+            <div class="related-body"><h3>Origens Mutantes</h3><p>Documentário • Ficção</p></div>
+          </a>
+          <a href="phoenix-protocol.html" class="related-card">
+            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-7.jpg') center 30%/cover no-repeat;"></div>
+            <div class="related-body"><h3>Protocolo Fênix</h3><p>Exclusivo • Premium</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,325 @@
+Cronograma simples para começar
+Etapa 1
+
+Criar a estrutura de pastas e arquivos
+
+Etapa 2
+
+Montar o HTML bruto das 4 páginas
+
+Etapa 3
+
+Aplicar o CSS global e identidade visual
+
+Etapa 4
+
+Estilizar login e cadastro
+
+Etapa 5
+
+Implementar cadastro e login com localStorage
+
+Etapa 6
+
+Implementar sessão e proteção da área restrita
+
+Etapa 7
+
+Refinar visual, hover, responsividade e textos
+
+xms-streaming/
+│
+├── index.html
+├── login.html
+├── register.html
+├── subscriber.html
+│
+├── css/
+│   ├── style.css
+│   ├── auth.css
+│   └── subscriber.css
+│
+├── js/
+│   ├── main.js
+│   ├── auth.js
+│   ├── session.js
+│   └── data.js
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── logo/
+│
+└── README.md
+
+HEADER
+├── Logo XMS
+├── Menu
+│   ├── Início
+│   ├── Catálogo
+│   ├── Personagens
+│   └── Assinatura
+└── Botões
+    ├── Entrar
+    └── Cadastrar
+
+HERO SECTION
+├── Imagem/banner de fundo
+├── Título principal
+├── Descrição
+└── Botões
+    ├── Explorar
+    └── Assinar agora
+
+SECTION: Destaques
+├── Card 1
+├── Card 2
+├── Card 3
+└── Card 4
+
+SECTION: Exclusivos para assinantes
+├── Card premium 1
+├── Card premium 2
+├── Card premium 3
+└── Card premium 4
+
+SECTION: Benefícios
+├── Acesso exclusivo
+├── Perfil do assinante
+└── Experiência premium
+
+FOOTER
+├── Projeto acadêmico
+├── Nome do aluno
+└── Aviso de conteúdo fictício
+
+MAIN CENTRALIZADO
+└── LOGIN CARD
+    ├── Logo XMS
+    ├── Título: Entrar na sua conta
+    ├── Campo e-mail
+    ├── Campo senha
+    ├── Botão entrar
+    ├── Mensagem de erro
+    └── Link para cadastro
+
+    MAIN CENTRALIZADO
+└── REGISTER CARD
+    ├── Logo XMS
+    ├── Título: Criar conta
+    ├── Campo nome
+    ├── Campo e-mail
+    ├── Campo senha
+    ├── Campo confirmar senha
+    ├── Select plano
+    │   ├── Basic
+    │   └── Premium
+    ├── Botão cadastrar
+    ├── Mensagem de sucesso/erro
+    └── Link para login
+
+    HEADER
+├── Logo XMS
+├── Menu
+│   ├── Área do assinante
+│   ├── Meu perfil
+│   └── Sair
+└── Indicador de usuário logado
+
+WELCOME SECTION
+├── Saudação com nome do usuário
+├── Texto do plano
+└── Banner exclusivo
+
+SECTION: Conteúdo liberado
+├── Card premium 1
+├── Card premium 2
+├── Card premium 3
+└── Card premium 4
+
+SECTION: Meus dados
+├── Nome
+├── E-mail
+├── Plano
+└── Status: Ativo
+
+SECTION: Ações
+├── Botão sair
+└── Botão voltar ao catálogo
+
+Checklist por arquivo
+index.html
+
+Deve conter:
+
+header com navegação
+hero principal
+seção de destaques
+seção premium
+seção de benefícios
+footer
+login.html
+
+Deve conter:
+
+formulário de login
+campo de e-mail
+campo de senha
+botão de login
+link para cadastro
+área para mensagem de erro
+register.html
+
+Deve conter:
+
+formulário de cadastro
+campos de nome, e-mail, senha e confirmação
+seletor de plano
+botão cadastrar
+área para mensagem de validação
+subscriber.html
+
+Deve conter:
+
+verificação de sessão
+exibição do nome do usuário
+exibição do e-mail
+exibição do plano
+botão de logout
+Checklist por CSS
+css/style.css
+
+Responsável por:
+
+reset básico
+paleta global
+fontes
+navbar
+hero
+cards
+footer
+botões
+responsividade geral
+css/auth.css
+
+Responsável por:
+
+layout centralizado de login/cadastro
+card de autenticação
+inputs
+mensagens de erro/sucesso
+botões dos formulários
+css/subscriber.css
+
+Responsável por:
+
+layout da área logada
+cards premium
+bloco de dados do usuário
+cabeçalho da área restrita
+Checklist por JavaScript
+js/data.js
+
+Responsável por:
+
+dados fictícios dos filmes/séries
+usuários iniciais opcionais
+funções auxiliares para leitura/escrita no localStorage
+
+Exemplo de responsabilidade:
+
+getUsers()
+saveUsers(users)
+getCurrentUser()
+setCurrentUser(user)
+logoutUser()
+js/auth.js
+
+Responsável por:
+
+cadastro
+login
+validações de formulário
+
+Funções esperadas:
+
+validar e-mail
+validar senha
+checar duplicidade
+limitar a 2 usuários
+autenticar usuário
+js/session.js
+
+Responsável por:
+
+verificar se existe usuário logado
+proteger subscriber.html
+preencher dados do usuário na tela
+fazer logout
+js/main.js
+
+Responsável por:
+
+interações da home
+menu mobile, se houver
+pequenas animações
+eventual filtro simples de conteúdo
+
+Paleta recomendada
+fundo principal: #0B0F1A
+fundo secundário: #121A2B
+destaque amarelo: #F5C518
+destaque azul: #2563EB
+vermelho de alerta: #DC2626
+texto principal: #F9FAFB
+texto secundário: #9CA3AF
+Fontes
+títulos: Orbitron
+textos: Poppins
+Aparência geral
+fundo escuro
+cards com hover
+bordas arredondadas
+sombras suaves
+botões destacados
+banners grandes
+
+Componentes visuais
+navbar
+hero-banner
+content-card
+premium-badge
+benefit-card
+auth-card
+profile-box
+footer
+Componentes lógicos
+registerUser
+loginUser
+checkSession
+renderCurrentUser
+logout
+
+[
+  {
+    id: 1,
+    name: "Scott Summers",
+    email: "scott@xms.com",
+    password: "123456",
+    plan: "Premium"
+  },
+  {
+    id: 2,
+    name: "Jean Grey",
+    email: "jean@xms.com",
+    password: "123456",
+    plan: "Basic"
+  }
+]
+
+{
+  id: 1,
+  name: "Scott Summers",
+  email: "scott@xms.com",
+  plan: "Premium"
+}
