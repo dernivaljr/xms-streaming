@@ -83,6 +83,20 @@ A plataforma fictícia se chama **XMS - X-Men Streaming** e apresenta filmes, s�
 
 ---
 
+## Melhorias futuras
+
+- Integração com banco de dados
+- Sistema real de autenticação com back-end
+- Painel administrativo
+- Player de vídeo mais avançado
+- Filtro e busca no catálogo
+
+## Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e educacionais.
+
+Consulte o arquivo `LICENSE` para mais informações.
+
 ## Estrutura do projeto
 
 ```bash
