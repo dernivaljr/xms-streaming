@@ -7,8 +7,9 @@
   --color-secondary: #2563eb;
   --color-text: #f9fafb;
   --color-text-muted: #9ca3af;
-  --color-danger: #dc2626;
   --color-border: rgba(255, 255, 255, 0.08);
+  --color-success: #22c55e;
+  --color-error: #ef4444;
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
   --radius-lg: 18px;
   --radius-md: 12px;
@@ -31,9 +32,10 @@ body {
   color: var(--color-text);
 }
 
-img {
-  max-width: 100%;
+img,
+video {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -45,11 +47,19 @@ ul {
   list-style: none;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 .container {
   width: min(100% - 2rem, var(--max-width));
   margin: 0 auto;
 }
 
+/* Header */
 .header {
   position: sticky;
   top: 0;
@@ -86,7 +96,7 @@ ul {
 .nav-list a {
   color: var(--color-text-muted);
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .nav-list a:hover {
@@ -95,9 +105,11 @@ ul {
 
 .header-actions {
   display: flex;
+  align-items: center;
   gap: 0.75rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -122,7 +134,7 @@ ul {
 
 .btn-secondary {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 
 .btn-secondary:hover {
@@ -130,82 +142,32 @@ ul {
 }
 
 .btn-outline {
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
   background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
 }
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.06);
 }
 
-.hero {
-  position: relative;
-  min-height: 88vh;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(to right, rgba(11, 15, 26, 0.92), rgba(11, 15, 26, 0.45)),
-    url("../assets/images/hero-bg.jpg") center top / cover no-repeat;
+.btn-outline-danger {
+  background: transparent;
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(11, 15, 26, 0.85), transparent);
+.btn-outline-danger:hover {
+  background: rgba(239, 68, 68, 0.08);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 650px;
-}
-
-.hero-tag {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(245, 197, 24, 0.12);
-  color: var(--color-primary);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.hero h1 {
-  font-family: "Orbitron", sans-serif;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.05rem;
-  color: var(--color-text-muted);
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.content-section,
-.plans-section {
-  padding: 5rem 0;
-}
-
-.exclusive-section {
-  background: rgba(255, 255, 255, 0.02);
-}
-
+/* Section headers */
 .section-header {
   margin-bottom: 2rem;
 }
 
-.section-header h2 {
+.section-header h2,
+.section-title {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -215,13 +177,9 @@ ul {
   color: var(--color-text-muted);
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-
+/* Generic cards */
 .content-card {
+  display: block;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -238,7 +196,8 @@ ul {
   position: relative;
   height: 260px;
   background-size: cover;
-  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-position: center 15%;
 }
 
 .card-body {
@@ -267,7 +226,7 @@ ul {
 
 .badge-free {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 
 .badge-premium {
@@ -275,30 +234,7 @@ ul {
   color: #111;
 }
 
-.plans-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.plan-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 1.8rem;
-  box-shadow: var(--shadow-soft);
-}
-
-.plan-card h3 {
-  margin-bottom: 0.75rem;
-  font-size: 1.2rem;
-}
-
-.plan-card p {
-  color: var(--color-text-muted);
-  line-height: 1.7;
-}
-
+/* Footer */
 .footer {
   padding: 2rem 0;
   border-top: 1px solid var(--color-border);
@@ -315,52 +251,18 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-/* Fictional image blocks */
-.card-image-1 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-1.jpg") center 30% /cover no-repeat;
+/* Utility */
+.text-muted {
+  color: var(--color-text-muted);
 }
 
-.card-image-2 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-2.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-3 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-3.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-4 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-4.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-5 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-5.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-6 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-6.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-7 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-7.jpg") center 30% /cover no-repeat;
-}
-
-.card-image-8 {
-  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-    url("../assets/images/card-8.jpg") center 30% /cover no-repeat;
-}
-
+/* Responsive */
 @media (min-width: 1200px) {
-  .hero-content, .hero-details-content {
-    max-width: 1000px;
+  .card-image {
+    background-position: center 12%;
   }
 }
+
 @media (max-width: 992px) {
   .header-content {
     flex-wrap: wrap;
@@ -380,34 +282,10 @@ ul {
     width: 100%;
     justify-content: center;
   }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .plans-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 640px) {
-  .hero {
-    min-height: 78vh;
-  }
-
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
   .btn {
     width: 100%;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
   }
 }

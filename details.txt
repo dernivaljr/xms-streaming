@@ -300,26 +300,25 @@ checkSession
 renderCurrentUser
 logout
 
-[
-  {
-    id: 1,
-    name: "Scott Summers",
-    email: "scott@xms.com",
-    password: "123456",
-    plan: "Premium"
-  },
-  {
-    id: 2,
-    name: "Jean Grey",
-    email: "jean@xms.com",
-    password: "123456",
-    plan: "Basic"
-  }
-]
 
-{
-  id: 1,
-  name: "Scott Summers",
-  email: "scott@xms.com",
-  plan: "Premium"
-}
+CSS
+css/global.css
+css/media-assets.css
+css/home.css
+css/auth.css
+css/subscriber.css
+css/details.css
+HTML principais
+index.html
+register.html
+login.html
+subscriber.html
+HTML detalhes
+first-mutation.html
+storm-rising-thunder.html
+school-of-power.html
+mutant-origins.html
+wolverine-classified.html
+magneto-rebellion.html
+phoenix-protocol.html
+cerebro-secret-files.html

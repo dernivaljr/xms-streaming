@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/media-assets.css" />
 </head>
 <body>
   <header class="header">
@@ -35,25 +37,27 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-
+    <section class="hero bg-main-hero" id="home">
       <div class="container hero-content">
-        <span class="hero-tag">Plataforma de streaming do universo mutante</span>
-        <h1>XMS: O streaming oficial das lendas mutantes</h1>
-        <p>
+        <span class="hero-badge">Plataforma de streaming do universo mutante</span>
+
+        <h1 class="hero-title">
+          XMS: o streaming oficial das <span>lendas mutantes</span>
+        </h1>
+
+        <p class="hero-description">
           Descubra filmes, séries e conteúdos exclusivos fictícios inspirados no universo X-Men
           em uma experiência premium e cinematográfica.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="#highlights" class="btn btn-primary">Explorar Agora</a>
           <a href="register.html" class="btn btn-secondary">Tornar-se Assinante</a>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="highlights">
+    <section class="featured-section" id="highlights">
       <div class="container">
         <div class="section-header">
           <h2>Destaques</h2>
@@ -62,7 +66,7 @@
 
         <div class="card-grid">
           <a href="first-mutation.html" class="content-card">
-            <div class="card-image card-image-1">
+            <div class="card-image bg-poster-1">
               <span class="badge badge-free">GRÁTIS</span>
             </div>
             <div class="card-body">
@@ -72,7 +76,7 @@
           </a>
 
           <a href="storm-rising-thunder.html" class="content-card">
-            <div class="card-image card-image-2">
+            <div class="card-image bg-poster-2">
               <span class="badge badge-free">GRÁTIS</span>
             </div>
             <div class="card-body">
@@ -82,7 +86,7 @@
           </a>
 
           <a href="school-of-power.html" class="content-card">
-            <div class="card-image card-image-3">
+            <div class="card-image bg-poster-3">
               <span class="badge badge-free">GRÁTIS</span>
             </div>
             <div class="card-body">
@@ -92,7 +96,7 @@
           </a>
 
           <a href="mutant-origins.html" class="content-card">
-            <div class="card-image card-image-4">
+            <div class="card-image bg-poster-4">
               <span class="badge badge-free">GRÁTIS</span>
             </div>
             <div class="card-body">
@@ -104,7 +108,7 @@
       </div>
     </section>
 
-    <section class="content-section exclusive-section" id="exclusive">
+    <section class="featured-section" id="exclusive">
       <div class="container">
         <div class="section-header">
           <h2>Exclusivos para Assinantes</h2>
@@ -113,7 +117,7 @@
 
         <div class="card-grid">
           <a href="wolverine-classified.html" class="content-card">
-            <div class="card-image card-image-5">
+            <div class="card-image bg-poster-5">
               <span class="badge badge-premium">EXCLUSIVO</span>
             </div>
             <div class="card-body">
@@ -123,7 +127,7 @@
           </a>
 
           <a href="magneto-rebellion.html" class="content-card">
-            <div class="card-image card-image-6">
+            <div class="card-image bg-poster-6">
               <span class="badge badge-premium">EXCLUSIVO</span>
             </div>
             <div class="card-body">
@@ -133,7 +137,7 @@
           </a>
 
           <a href="phoenix-protocol.html" class="content-card">
-            <div class="card-image card-image-7">
+            <div class="card-image bg-poster-7">
               <span class="badge badge-premium">EXCLUSIVO</span>
             </div>
             <div class="card-body">
@@ -143,7 +147,7 @@
           </a>
 
           <a href="cerebro-secret-files.html" class="content-card">
-            <div class="card-image card-image-8">
+            <div class="card-image bg-poster-8">
               <span class="badge badge-premium">EXCLUSIVO</span>
             </div>
             <div class="card-body">
@@ -158,25 +162,59 @@
     <section class="plans-section" id="plans">
       <div class="container">
         <div class="section-header">
-          <h2>Por que assinar a XMS?</h2>
-          <p>Uma experiência premium fictícia feita para fãs do universo mutante.</p>
+          <h2>Escolha seu plano</h2>
+          <p>Uma experiência fictícia de streaming feita para fãs do universo mutante.</p>
         </div>
 
         <div class="plans-grid">
           <article class="plan-card">
-            <h3>Catálogo Exclusivo</h3>
-            <p>Desbloqueie conteúdos mutantes premium disponíveis apenas para assinantes.</p>
+            <span class="plan-tag">Acesso Essencial</span>
+            <h3 class="plan-title">Basic</h3>
+            <p class="plan-price">R$ 19,90 <span>/mês</span></p>
+            <p class="plan-description">
+              Ideal para quem deseja acessar a plataforma, explorar conteúdos e conhecer o universo XMS.
+            </p>
+            <ul class="plan-features">
+              <li>Acesso à área do assinante</li>
+              <li>Catálogo liberado do sistema</li>
+              <li>Navegação completa na plataforma</li>
+              <li>Perfil pessoal do usuário</li>
+            </ul>
+            <a href="register.html" class="btn btn-outline">Assinar Basic</a>
           </article>
 
-          <article class="plan-card">
-            <h3>Área do Assinante</h3>
-            <p>Acesse sua conta pessoal e visualize suas informações cadastradas.</p>
+          <article class="plan-card highlight">
+            <span class="plan-tag">Mais Popular</span>
+            <h3 class="plan-title">Premium</h3>
+            <p class="plan-price">R$ 29,90 <span>/mês</span></p>
+            <p class="plan-description">
+              A melhor experiência para desbloquear conteúdos exclusivos, trailers premium e a área completa da XMS.
+            </p>
+            <ul class="plan-features">
+              <li>Todos os benefícios do plano Basic</li>
+              <li>Conteúdos exclusivos premium</li>
+              <li>Páginas especiais de detalhes</li>
+              <li>Experiência completa do catálogo XMS</li>
+            </ul>
+            <a href="register.html" class="btn btn-primary">Assinar Premium</a>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="plan-card">
-            <h3>Experiência Imersiva</h3>
-            <p>Desfrute de uma interface moderna de streaming inspirada em plataformas de heróis.</p>
-          </article>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Pronto para entrar no universo XMS?</h2>
+          <p>
+            Crie sua conta, acesse a área exclusiva do assinante e explore um catálogo fictício
+            inspirado no universo dos mutantes com visual de plataforma real.
+          </p>
+
+          <div class="cta-actions">
+            <a href="register.html" class="btn btn-primary">Criar Conta</a>
+            <a href="login.html" class="btn btn-outline">Já tenho conta</a>
+          </div>
         </div>
       </div>
     </section>

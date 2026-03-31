@@ -9,17 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+  <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/details.css" />
-  <style>
-    .hero-details.storm-hero {
-      background:
-        linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
-        linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
-        url("assets/images/card-2.jpg") center 30% /cover no-repeat;
-    }
-  </style>
+  <link rel="stylesheet" href="css/media-assets.css" />
 </head>
-<body>
+<body data-access="basic">
   <header class="header">
     <div class="container header-content">
       <a href="index.html" class="logo">
@@ -43,10 +37,11 @@
   </header>
 
   <main>
-    <section class="hero-details storm-hero">
+    <section class="hero-details bg-poster-2">
       <div class="container hero-details-content">
         <span class="hero-badge">Conteúdo Gratuito</span>
-        <h1>Tempestade: Trovão Ascendente</h1>
+
+        <h1 class="hero-title">Tempestade: Trovão Ascendente</h1>
 
         <div class="hero-meta">
           <span class="meta-pill">2026</span>
@@ -60,7 +55,7 @@
           Uma poderosa mutante com domínio sobre os céus precisa enfrentar uma força antiga que ameaça destruir o equilíbrio entre natureza, energia e humanidade.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
           <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
         </div>
@@ -73,26 +68,26 @@
           <article class="details-card">
             <h2 class="section-title">Sinopse</h2>
             <p class="synopsis-text">
-              Aurora sempre sentiu que havia algo diferente em sua conexão com a natureza. Quando descobre que consegue manipular ventos, nuvens e tempestades, ela passa a ser alvo de forças que desejam controlar seu poder para fins militares.
+              Após anos vivendo entre missões secretas e conflitos internos, Aurora Storm é convocada para enfrentar uma ameaça que vem crescendo nos céus. Um antigo artefato mutante desperta fenômenos climáticos extremos e desequilibra o planeta.
             </p>
             <br />
             <p class="synopsis-text">
-              Em meio a ruínas tecnológicas, regiões devastadas e segredos ancestrais, a heroína precisará dominar suas emoções para impedir uma catástrofe global. O céu se torna o palco de uma batalha onde cada relâmpago pode decidir o destino do planeta.
+              Para impedir o colapso ambiental, ela precisará dominar uma força ainda maior do que seus próprios poderes. Entre trovões, perdas e escolhas difíceis, nasce a lenda de uma das mutantes mais poderosas já vistas.
             </p>
           </article>
 
           <article class="details-card">
             <h2 class="section-title">Elenco Principal</h2>
             <ul class="cast-list">
-              <li><strong>Amara Stone</strong> como Aurora Storm</li>
-              <li><strong>Julian West</strong> como Kael Hunter</li>
-              <li><strong>Nina Valen</strong> como Lyra Frost</li>
-              <li><strong>Thomas Reed</strong> como General Harken</li>
-              <li><strong>Selena Moore</strong> como Miriam Vale</li>
+              <li><strong>Naomi Carter</strong> como Aurora Storm</li>
+              <li><strong>Jason Miles</strong> como Elias Drake</li>
+              <li><strong>Raven Scott</strong> como Lyria</li>
+              <li><strong>Daniel Voss</strong> como Comandante Hale</li>
+              <li><strong>Mia Laurent</strong> como Selene Frost</li>
             </ul>
           </article>
 
-          <article class="details-card video-wrapper" id="trailer">
+          <article class="details-card" id="trailer">
             <h2 class="section-title">Trailer</h2>
             <video class="video-player" controls poster="assets/images/card-2.jpg">
               <source src="assets/videos/storm-rising-thunder.mp4" type="video/mp4" />
@@ -113,7 +108,7 @@
               <li><strong>Categoria:</strong> Aventura, Fantasia</li>
               <li><strong>Idioma:</strong> Português / Inglês</li>
               <li><strong>Status:</strong> Disponível</li>
-              <li><strong>Direção:</strong> Helena Cross</li>
+              <li><strong>Direção:</strong> Helena Ward</li>
               <li><strong>Produção:</strong> XMS Studios</li>
             </ul>
           </article>
@@ -122,7 +117,7 @@
             <h2 class="section-title">Avaliação</h2>
             <ul class="info-list">
               <li><strong>Público:</strong> 4.7 / 5</li>
-              <li><strong>Crítica:</strong> 89%</li>
+              <li><strong>Crítica:</strong> 90%</li>
               <li><strong>Popularidade:</strong> Alta</li>
               <li><strong>Destaque:</strong> Poderes climáticos</li>
             </ul>
@@ -143,15 +138,13 @@
     <section class="related-section" id="related">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Títulos Relacionados</h2>
-          <p class="hero-description">
-            Explore outros conteúdos disponíveis no universo mutante da XMS.
-          </p>
+          <h2>Títulos Relacionados</h2>
+          <p>Explore outros conteúdos disponíveis no universo mutante da XMS.</p>
         </div>
 
         <div class="related-grid">
           <a href="first-mutation.html" class="related-card">
-            <div class="related-image" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('assets/images/card-1.jpg') center 30% /cover no-repeat;"></div>
+            <div class="related-image bg-poster-1"></div>
             <div class="related-body">
               <h3>X-Men: Primeira Mutação</h3>
               <p>Ação • Ficção Científica</p>
@@ -159,23 +152,25 @@
           </a>
 
           <a href="school-of-power.html" class="related-card">
-            <div class="related-image related-image-3"></div>
+            <div class="related-image bg-poster-3"></div>
             <div class="related-body">
               <h3>Escola de Poder</h3>
               <p>Série • Drama</p>
             </div>
           </a>
 
-          <a href="wolverine-classified.html" class="related-card">
-            <div class="related-image" style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('assets/images/card-5.jpg') center 30% /cover no-repeat;"></div>
+          <a href="mutant-origins.html" class="related-card">
+            <div class="related-image bg-poster-4"></div>
             <div class="related-body">
-              <h3>Wolverine: Classificado</h3>
-              <p>Exclusivo • Premium</p>
+              <h3>Origens Mutantes</h3>
+              <p>Documentário • Ficção</p>
             </div>
           </a>
         </div>
       </div>
     </section>
   </main>
+  <script src="js/data.js"></script>
+<script src="js/details-access.js"></script>
 </body>
 </html>

@@ -28,10 +28,9 @@ function clearCurrentUser() {
 }
 
 function generateUserId(users) {
-  if (users.length === 0) {
+  if (!users.length) {
     return 1;
   }
 
-  const lastUser = users[users.length - 1];
-  return lastUser.id + 1;
+  return Math.max(...users.map((user) => user.id)) + 1;
 }

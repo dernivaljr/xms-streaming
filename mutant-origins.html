@@ -8,21 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/details.css" />
 
-  <style>
-    .hero-details.origins-hero {
-      background:
-        linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
-        linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
-        url("assets/images/card-4.jpg") center/cover no-repeat;
-    }
-  </style>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/details.css" />
+  <link rel="stylesheet" href="css/media-assets.css" />
 </head>
-<body>
+<body data-access="basic">
   <header class="header">
     <div class="container header-content">
-      <a href="index.html" class="logo"><span class="logo-x">X</span>MS</a>
+      <a href="index.html" class="logo">
+        <span class="logo-x">X</span>MS
+      </a>
 
       <nav class="nav">
         <ul class="nav-list">
@@ -41,10 +37,11 @@
   </header>
 
   <main>
-    <section class="hero-details origins-hero">
+    <section class="hero-details bg-poster-4">
       <div class="container hero-details-content">
         <span class="hero-badge">Conteúdo Gratuito</span>
-        <h1>Origens Mutantes</h1>
+
+        <h1 class="hero-title">Origens Mutantes</h1>
 
         <div class="hero-meta">
           <span class="meta-pill">2026</span>
@@ -58,7 +55,7 @@
           Uma investigação cinematográfica sobre o surgimento dos mutantes, suas primeiras manifestações e o impacto dessa nova espécie na sociedade.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
           <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
         </div>
@@ -75,7 +72,7 @@
             </p>
             <br />
             <p class="synopsis-text">
-              O longa explora teorias, laboratórios ocultos, relatos históricos e o momento em que o mundo percebeu que a evolução havia tomado um novo rumo.
+              O longa explora teorias, laboratórios ocultos, relatos históricos e o momento em que o mundo percebeu que a evolução havia tomado um novo rumo. Entre ciência, medo e fascínio, o documentário revela como os mutantes deixaram de ser lenda para se tornarem realidade.
             </p>
           </article>
 
@@ -89,7 +86,7 @@
             </ul>
           </article>
 
-          <article class="details-card video-wrapper" id="trailer">
+          <article class="details-card" id="trailer">
             <h2 class="section-title">Trailer</h2>
             <video class="video-player" controls poster="assets/images/card-4.jpg">
               <source src="assets/videos/mutant-origins.mp4" type="video/mp4" />
@@ -108,6 +105,7 @@
               <li><strong>Duração:</strong> 1h 38min</li>
               <li><strong>Classificação:</strong> Livre</li>
               <li><strong>Categoria:</strong> Documentário, Ficção</li>
+              <li><strong>Idioma:</strong> Português / Inglês</li>
               <li><strong>Status:</strong> Disponível</li>
               <li><strong>Produção:</strong> XMS Archives</li>
             </ul>
@@ -118,7 +116,17 @@
             <ul class="info-list">
               <li><strong>Público:</strong> 4.5 / 5</li>
               <li><strong>Crítica:</strong> 84%</li>
+              <li><strong>Popularidade:</strong> Alta</li>
               <li><strong>Destaque:</strong> Linha do tempo mutante</li>
+            </ul>
+          </article>
+
+          <article class="sidebar-card">
+            <h2 class="section-title">Disponibilidade</h2>
+            <ul class="info-list">
+              <li><strong>Plano Free:</strong> Disponível</li>
+              <li><strong>Plano Basic:</strong> Disponível</li>
+              <li><strong>Plano Premium:</strong> Disponível</li>
             </ul>
           </article>
         </aside>
@@ -127,23 +135,40 @@
 
     <section class="related-section" id="related">
       <div class="container">
-        <h2 class="section-title">Títulos Relacionados</h2>
+        <div class="section-header">
+          <h2>Títulos Relacionados</h2>
+          <p>Explore outros conteúdos disponíveis no universo mutante da XMS.</p>
+        </div>
+
         <div class="related-grid">
           <a href="first-mutation.html" class="related-card">
-            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-1.jpg') center 30% /cover no-repeat;"></div>
-            <div class="related-body"><h3>X-Men: Primeira Mutação</h3><p>Ação • Ficção Científica</p></div>
+            <div class="related-image bg-poster-1"></div>
+            <div class="related-body">
+              <h3>X-Men: Primeira Mutação</h3>
+              <p>Ação • Ficção Científica</p>
+            </div>
           </a>
+
           <a href="school-of-power.html" class="related-card">
-            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-3.jpg') center 30% /cover no-repeat;"></div>
-            <div class="related-body"><h3>Escola de Poder</h3><p>Série • Drama</p></div>
+            <div class="related-image bg-poster-3"></div>
+            <div class="related-body">
+              <h3>Escola de Poder</h3>
+              <p>Série • Drama</p>
+            </div>
           </a>
+
           <a href="cerebro-secret-files.html" class="related-card">
-            <div class="related-image" style="background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.45)),url('assets/images/card-8.jpg') center 30% /cover no-repeat;"></div>
-            <div class="related-body"><h3>Cérebro: Arquivos Secretos</h3><p>Exclusivo • Premium</p></div>
+            <div class="related-image bg-poster-8"></div>
+            <div class="related-body">
+              <h3>Cérebro: Arquivos Secretos</h3>
+              <p>Exclusivo • Premium</p>
+            </div>
           </a>
         </div>
       </div>
     </section>
   </main>
+  <script src="js/data.js"></script>
+<script src="js/details-access.js"></script>
 </body>
 </html>

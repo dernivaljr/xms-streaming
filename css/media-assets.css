@@ -1,0 +1,92 @@
+.bg-main-hero {
+  background-image:
+    linear-gradient(to right, rgba(11, 15, 26, 0.92), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/hero-bg.jpg");
+  background-position: center 15%;
+}
+
+.bg-subscriber-hero {
+  background-image:
+    linear-gradient(to right, rgba(11, 15, 26, 0.90), rgba(11, 15, 26, 0.50)),
+    url("../assets/images/hero-bg.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-1 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-1.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-2 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-2.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-3 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-3.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-4 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-4.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-5 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-5.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-6 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-6.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-7 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-7.jpg");
+  background-position: center 15%;
+}
+
+.bg-poster-8 {
+  background-image:
+    linear-gradient(to top, rgba(11, 15, 26, 0.96), rgba(11, 15, 26, 0.25)),
+    linear-gradient(to right, rgba(11, 15, 26, 0.88), rgba(11, 15, 26, 0.45)),
+    url("../assets/images/card-8.jpg");
+  background-position: center 15%;
+}
+
+@media (min-width: 1200px) {
+  .bg-main-hero,
+  .bg-subscriber-hero,
+  .bg-poster-1,
+  .bg-poster-2,
+  .bg-poster-3,
+  .bg-poster-4,
+  .bg-poster-5,
+  .bg-poster-6,
+  .bg-poster-7,
+  .bg-poster-8 {
+    background-position: center 12%;
+  }
+}

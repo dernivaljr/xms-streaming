@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   protectSubscriberPage();
   renderCurrentUserData();
   initializeLogoutButtons();
+  controlSubscriberCatalog();
 });
 
 function protectSubscriberPage() {
@@ -26,7 +27,9 @@ function renderCurrentUserData() {
   const headerUserName = document.getElementById("headerUserName");
 
   if (welcomeText) {
-    welcomeText.textContent = `${currentUser.name}, seu acesso ${translatePlan(currentUser.plan)} foi confirmado. Explore agora os conteúdos exclusivos do universo mutante.`;
+    welcomeText.textContent =
+      `${currentUser.name}, seu acesso ${translatePlan(currentUser.plan)} foi confirmado. ` +
+      "Explore agora os conteúdos disponíveis no seu plano.";
   }
 
   if (profileName) {
@@ -43,6 +46,30 @@ function renderCurrentUserData() {
 
   if (headerUserName) {
     headerUserName.textContent = currentUser.name;
+  }
+}
+
+function controlSubscriberCatalog() {
+  const currentUser = getCurrentUser();
+
+  if (!currentUser) {
+    return;
+  }
+
+  const userPlan = normalizePlan(currentUser.plan);
+  const premiumSection = document.getElementById("premium-content-section");
+  const premiumText = document.getElementById("premiumSectionText");
+
+  if (userPlan === "premium") {
+    return;
+  }
+
+  if (premiumSection) {
+    premiumSection.style.display = "none";
+  }
+
+  if (premiumText) {
+    premiumText.textContent = "Faça upgrade para desbloquear os títulos premium.";
   }
 }
 
@@ -73,5 +100,9 @@ function translatePlan(plan) {
     return "Basic";
   }
 
-  return plan;
+  return plan || "-";
+}
+
+function normalizePlan(value) {
+  return String(value || "").trim().toLowerCase();
 }

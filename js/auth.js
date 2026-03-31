@@ -13,11 +13,17 @@ function redirectIfAuthenticated() {
     return;
   }
 
-  const currentPage = window.location.pathname.split("/").pop();
+  const currentPage = getCurrentPageName();
 
   if (currentPage === "login.html" || currentPage === "register.html") {
     window.location.href = "subscriber.html";
   }
+}
+
+function getCurrentPageName() {
+  const path = window.location.pathname;
+  const pageName = path.split("/").pop();
+  return pageName || "index.html";
 }
 
 function initializeRegisterForm() {
@@ -52,9 +58,9 @@ function initializePasswordToggles() {
         return;
       }
 
-      const isPassword = input.type === "password";
-      input.type = isPassword ? "text" : "password";
-      button.textContent = isPassword ? "Ocultar" : "Mostrar";
+      const isPasswordHidden = input.type === "password";
+      input.type = isPasswordHidden ? "text" : "password";
+      button.textContent = isPasswordHidden ? "Ocultar" : "Mostrar";
     });
   });
 }
@@ -66,19 +72,27 @@ function initializeClearUsersButton() {
     return;
   }
 
-  clearUsersButton.addEventListener("click", () => {
-    const confirmed = window.confirm("Deseja realmente apagar todos os usuários salvos neste navegador?");
+  clearUsersButton.addEventListener("click", handleClearUsers);
+}
 
-    if (!confirmed) {
-      return;
-    }
+function handleClearUsers() {
+  const confirmed = window.confirm(
+    "Deseja realmente apagar todos os usuários salvos neste navegador?"
+  );
 
-    clearUsers();
-    clearCurrentUser();
+  if (!confirmed) {
+    return;
+  }
 
-    const messageElement = document.getElementById("registerMessage");
-    showMessage(messageElement, "Usuários removidos com sucesso. Agora você pode cadastrar novamente.", "success");
-  });
+  clearUsers();
+  clearCurrentUser();
+
+  const messageElement = document.getElementById("registerMessage");
+  showMessage(
+    messageElement,
+    "Usuários removidos com sucesso. Agora você pode cadastrar novamente.",
+    "success"
+  );
 }
 
 function handleRegisterSubmit(event) {
@@ -126,9 +140,9 @@ function handleRegisterSubmit(event) {
     return;
   }
 
-  const userAlreadyExists = users.some((user) => user.email === email);
+  const emailAlreadyExists = users.some((user) => user.email === email);
 
-  if (userAlreadyExists) {
+  if (emailAlreadyExists) {
     showMessage(messageElement, "Já existe um usuário cadastrado com este e-mail.", "error");
     return;
   }
@@ -145,7 +159,11 @@ function handleRegisterSubmit(event) {
   users.push(newUser);
   saveUsers(users);
 
-  showMessage(messageElement, "Cadastro realizado com sucesso. Redirecionando para o login...", "success");
+  showMessage(
+    messageElement,
+    "Cadastro realizado com sucesso. Redirecionando para o login...",
+    "success"
+  );
 
   event.target.reset();
 
@@ -200,12 +218,20 @@ function handleLoginSubmit(event) {
 }
 
 function showMessage(element, text, type) {
+  if (!element) {
+    return;
+  }
+
   element.textContent = text;
   element.classList.remove("success", "error");
   element.classList.add(type);
 }
 
 function clearMessage(element) {
+  if (!element) {
+    return;
+  }
+
   element.textContent = "";
   element.classList.remove("success", "error");
 }

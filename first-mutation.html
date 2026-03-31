@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+  <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/details.css" />
+  <link rel="stylesheet" href="css/media-assets.css" />
 </head>
-<body>
+<body data-access="basic">
   <header class="header">
     <div class="container header-content">
       <a href="index.html" class="logo">
@@ -35,10 +37,11 @@
   </header>
 
   <main>
-    <section class="hero-details">
+    <section class="hero-details bg-poster-1">
       <div class="container hero-details-content">
         <span class="hero-badge">Conteúdo Gratuito</span>
-        <h1>X-Men: Primeira Mutação</h1>
+
+        <h1 class="hero-title">X-Men: Primeira Mutação</h1>
 
         <div class="hero-meta">
           <span class="meta-pill">2026</span>
@@ -52,7 +55,7 @@
           Quando um grupo de jovens descobre habilidades extraordinárias, eles precisam aprender a controlar seus poderes antes que uma ameaça global transforme sua existência em uma guerra contra a humanidade.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
           <a href="#trailer" class="btn btn-primary">Assistir Trailer</a>
           <a href="#details" class="btn btn-secondary">Ver Detalhes</a>
         </div>
@@ -84,7 +87,7 @@
             </ul>
           </article>
 
-          <article class="details-card video-wrapper" id="trailer">
+          <article class="details-card" id="trailer">
             <h2 class="section-title">Trailer</h2>
             <video class="video-player" controls poster="assets/images/card-1.jpg">
               <source src="assets/videos/first-mutation.mp4" type="video/mp4" />
@@ -135,15 +138,13 @@
     <section class="related-section" id="related">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Títulos Relacionados</h2>
-          <p class="hero-description">
-            Explore outros conteúdos disponíveis no universo mutante da XMS.
-          </p>
+          <h2>Títulos Relacionados</h2>
+          <p>Explore outros conteúdos disponíveis no universo mutante da XMS.</p>
         </div>
 
         <div class="related-grid">
           <a href="storm-rising-thunder.html" class="related-card">
-            <div class="related-image related-image-2"></div>
+            <div class="related-image bg-poster-2"></div>
             <div class="related-body">
               <h3>Tempestade: Trovão Ascendente</h3>
               <p>Aventura • Fantasia</p>
@@ -151,7 +152,7 @@
           </a>
 
           <a href="school-of-power.html" class="related-card">
-            <div class="related-image related-image-3"></div>
+            <div class="related-image bg-poster-3"></div>
             <div class="related-body">
               <h3>Escola de Poder</h3>
               <p>Série • Drama</p>
@@ -159,7 +160,7 @@
           </a>
 
           <a href="mutant-origins.html" class="related-card">
-            <div class="related-image related-image-4"></div>
+            <div class="related-image bg-poster-4"></div>
             <div class="related-body">
               <h3>Origens Mutantes</h3>
               <p>Documentário • Ficção</p>
@@ -169,5 +170,7 @@
       </div>
     </section>
   </main>
+  <script src="js/data.js"></script>
+  <script src="js/details-access.js"></script>
 </body>
 </html>
