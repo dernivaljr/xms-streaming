@@ -185,7 +185,7 @@
 /* Responsive */
 @media (min-width: 1200px) {
   .hero-content {
-    max-width: 850px;
+    max-width: 1000px;
   }
 
   .hero-description {
